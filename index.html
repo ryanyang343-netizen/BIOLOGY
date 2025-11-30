@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19L 微缩水生生态系统研究报告</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 悬浮导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-flask"></i> 
+            <span>Bio-Group Research</span>
+        </div>
+        <div class="nav-links">
+            <a href="#overview">项目概况</a>
+            <a href="#analysis">生态分析</a>
+            <a href="#logs">观察日志</a>
+            <a href="#species">物种图鉴</a>
+        </div>
+        <div class="status-badge">
+            <span class="pulse"></span>
+            <span id="system-status">系统发酵中...</span>
+        </div>
+    </nav>
+
+    <!-- Hero 区域：概况 -->
+    <header class="hero" id="overview">
+        <div class="hero-text fade-in">
+            <div class="tag">2025 年度生物课题</div>
+            <h1>19L 封闭式水生生态系统<br>微缩模型研究</h1>
+            <p class="intro">
+                本项目旨在利用废弃的 19L 聚碳酸酯饮用水桶，构建一个相对封闭的自循环水生生态系统。
+                通过引入生产者（水草）、消费者（鱼、虾、螺）及分解者（微生物），
+                我们试图模拟自然界中的物质循环（特别是氮循环）与能量流动过程，
+                并探究在有限空间内生物群落的演替与稳态维持机制。
+            </p>
+            
+            <!-- 模拟数据仪表盘 -->
+            <div class="data-dashboard">
+                <div class="data-item">
+                    <span class="label">水体容量</span>
+                    <span class="value">19.0 L</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">物种丰富度</span>
+                    <span class="value">High</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">溶解氧 (Est.)</span>
+                    <span class="value">6.5 mg/L</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">硝化系统</span>
+                    <span class="value">建立中</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-visual fade-in">
+            <div class="image-wrapper">
+                <img src="bottle.jpg" alt="Ecosystem Container">
+                <div class="scan-line"></div>
+            </div>
+            <p class="caption">图 1. 实验装置全景 (Day 30)</p>
+        </div>
+    </header>
+
+    <!-- 生态系统机理分析 -->
+    <section class="analysis-section" id="analysis">
+        <div class="container">
+            <h2 class="section-title">生态系统机理分析</h2>
+            <p class="section-desc">基于生态学原理对本系统内部的动态平衡进行理论解析</p>
+            
+            <div class="analysis-grid">
+                <div class="analysis-card fade-in">
+                    <i class="fas fa-recycle icon"></i>
+                    <h3>氮循环 (Nitrogen Cycle)</h3>
+                    <p>系统内的氨氮主要来源于鱼虾的排泄物及残饵。在好氧条件下，底砂中附着的硝化细菌（Nitrifying bacteria）将剧毒的氨氮（NH₃）转化为亚硝酸盐，进而转化为毒性较低的硝酸盐（NO₃⁻），最终被水生植物作为氮肥吸收利用，完成了物质的循环再生。</p>
+                </div>
+                <div class="analysis-card fade-in">
+                    <i class="fas fa-sun icon"></i>
+                    <h3>能量流动 (Energy Flow)</h3>
+                    <p>能量输入主要依赖太阳散射光。生产者（水草）通过光合作用固定光能；初级消费者（小虾、螺）摄食藻类和碎屑；次级消费者（草金鱼、斑马鱼）捕食或摄取人工饲料。能量在传递过程中逐级递减，未利用的能量最终以热能形式散失。</p>
+                </div>
+                <div class="analysis-card fade-in">
+                    <i class="fas fa-balance-scale icon"></i>
+                    <h3>稳态调节 (Homeostasis)</h3>
+                    <p>系统具有一定的自我调节能力（负反馈调节）。例如，初期水体浑浊是由于细菌大量繁殖，随后原生动物增多捕食细菌，加上颗粒沉降，水体转清。水草的爆发式生长虽然吸收了过剩营养，但也压缩了鱼类生存空间，体现了种间竞争的加剧。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 详细观察日志 -->
+    <section class="log-section" id="logs">
+        <div class="container">
+            <h2 class="section-title">实验观察与干预记录</h2>
+            <div class="timeline-complex">
+                
+                <div class="log-entry fade-in">
+                    <div class="date-badge">阶段一</div>
+                    <div class="content">
+                        <h3>初期构建与水质浑浊现象</h3>
+                        <p class="meta">时间：Day 01 - Day 02 | 状态：不稳定</p>
+                        <p>我们将经过清洗的底砂铺设于桶底，注入困过的自来水，并植入了大量伊乐藻（Elodea）等水生植物。随后放入了包括黑壳虾、斑马鱼在内的先锋生物。<strong>观察记录：</strong>入缸初期，由于底床扰动及异养细菌的爆发性增殖（水华前兆），水体呈现明显的乳白色浑浊，能见度低于 5cm。此时生态系统极其脆弱。</p>
+                    </div>
+                </div>
+
+                <div class="log-entry fade-in">
+                    <div class="date-badge">阶段二</div>
+                    <div class="content">
+                        <h3>微生物群落建立与水质自净</h3>
+                        <p class="meta">时间：Day 03 | 状态：转好</p>
+                        <p>在未进行物理过滤干预的情况下，仅仅经过 72 小时的静置。<strong>观察记录：</strong>水体奇迹般地由浑浊转为清澈透明。这表明物理沉降作用显著，同时硝化细菌等有益菌群可能开始在底砂和滤材上定植，初步建立起了生物过滤系统，有效分解了水中的有机悬浮物。</p>
+                    </div>
+                </div>
+
+                <div class="log-entry fade-in">
+                    <div class="date-badge">突发事件</div>
+                    <div class="content">
+                        <h3>人为干预：器械掉落与瓶体改造</h3>
+                        <p class="meta">事件性质：操作失误 / 结构改造</p>
+                        <p>在尝试移除一只死亡个体的过程中，长柄镊子不慎滑落至桶底。鉴于瓶口狭窄难以操作，项目组决定进行<strong>结构性改造</strong>：在桶身上方切开一个矩形窗口。这一“意外”不仅解决了取物问题，更为后续的投喂、修剪水草及气体交换提供了便利通道。</p>
+                    </div>
+                </div>
+
+                <div class="log-entry fade-in">
+                    <div class="date-badge">阶段三</div>
+                    <div class="content">
+                        <h3>种间竞争：植物泛滥与生态位挤压</h3>
+                        <p class="meta">时间：Day 10+ | 状态：营养富集</p>
+                        <p><strong>生态危机：</strong>随着光照充足及水中硝酸盐含量的积累，水草表现出惊人的生长速度（Eutrophication tendency）。原本的漂浮植物迅速定植并占据了 80% 以上的水体空间。茂密的植被虽然提供了充足氧气，但也导致鱼类活动空间被严重压缩，部分小型鱼类甚至被茎叶缠绕导致行动受限。<strong>应对措施：</strong>利用开设的窗口，人工移除了约 1/3 的生物量，重新平衡了生存空间。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 物种详录 -->
+    <section class="species-section" id="species">
+        <div class="container">
+            <h2 class="section-title">生物群落图鉴</h2>
+            <p class="section-desc">Ecosystem Inhabitants Inventory</p>
+            
+            <div class="species-grid">
+                
+                <!-- 草金鱼 -->
+                <div class="species-card fade-in">
+                    <div class="img-box">
+                        <img src="goldfish.jpg" alt="Goldfish">
+                        <div class="role-tag consumer">次级消费者</div>
+                    </div>
+                    <div class="info-box">
+                        <h3>草金鱼</h3>
+                        <p class="latin-name">Carassius auratus</p>
+                        <div class="details">
+                            <p><strong>种群数量：</strong>3 尾</p>
+                            <p><strong>生态功能：</strong>作为体型最大的消费者，它们是视觉焦点。其产生的含氮废物是硝化系统的重要负荷来源，驱动氮循环。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 斑马鱼 (改为本地图片) -->
+                <div class="species-card fade-in">
+                    <div class="img-box">
+                        <!-- 这里已经改成 zebrafish.jpg 了 -->
+                        <img src="zebrafish.jpg" alt="Zebrafish">
+                        <div class="role-tag consumer">初级/次级消费者</div>
+                    </div>
+                    <div class="info-box">
+                        <h3>斑马鱼</h3>
+                        <p class="latin-name">Danio rerio</p>
+                        <div class="details">
+                            <p><strong>种群数量：</strong>若干 (群游)</p>
+                            <p><strong>生态功能：</strong>活跃于上层水域。作为模式生物，它们对水质变化敏感，可作为指示生物。主要摄食细小浮游生物及饲料。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 苹果螺 -->
+                <div class="species-card fade-in">
+                    <div class="img-box">
+                        <img src="snail.jpg" alt="Ramshorn Snail">
+                        <div class="role-tag decomposer">分解者/清除者</div>
+                    </div>
+                    <div class="info-box">
+                        <h3>苹果螺</h3>
+                        <p class="latin-name">Planorbarius corneus</p>
+                        <div class="details">
+                            <p><strong>种群数量：</strong>繁殖中</p>
+                            <p><strong>生态功能：</strong>重要的工具生物。它们刮食缸壁藻类（Algae），并清理未吃完的残饵，防止水质败坏。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 黑壳虾 -->
+                <div class="species-card fade-in">
+                    <div class="img-box">
+                        <img src="shrimp.jpg" alt="Shrimp">
+                        <div class="role-tag consumer">消费者</div>
+                    </div>
+                    <div class="info-box">
+                        <h3>黑壳虾</h3>
+                        <p class="latin-name">Neocaridina davidi</p>
+                        <div class="details">
+                            <p><strong>种群数量：</strong>约 8 只</p>
+                            <p><strong>生态功能：</strong>隐蔽于底层和水草丛中。作为食碎屑者（Detritivores），它们摄取沉降的有机颗粒和藻类，促进物质循环。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 水草 -->
+                <div class="species-card fade-in">
+                    <div class="img-box">
+                        <img src="plant.jpg" alt="Plants">
+                        <div class="role-tag producer">生产者</div>
+                    </div>
+                    <div class="info-box">
+                        <h3>沉水植物群落</h3>
+                        <p class="latin-name">Hydrocharitaceae / Elodea</p>
+                        <div class="details">
+                            <p><strong>覆盖率：</strong><span style="color:red">泛滥 (Overgrown)</span></p>
+                            <p><strong>生态功能：</strong>通过光合作用提供氧气，吸收氨氮、硝酸盐等有害物质。其爆发式生长一度导致空间郁闭，需人工干预。</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队成员 -->
+    <section class="team-footer">
+        <div class="container">
+            <h3>研究小组成员 (Contributors)</h3>
+            <div class="member-list">
+                <span>陈子齐</span> · 
+                <span>吴玥儒</span> · 
+                <span>刘译瑶</span> · 
+                <span>刘昀菘</span> · 
+                <span>周梓涵</span> · 
+                <span>杨睿轩</span>
+            </div>
+            <p class="copyright">
+                © 2025 生物课题组 | 19L Ecosystem Project Report<br>
+                <span class="tiny">Web Development: Yang Ruixuan</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" title="返回顶部"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
